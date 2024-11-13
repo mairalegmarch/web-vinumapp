@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maira Legendre - DMT2BV - Turno tarde - 2024</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid justify-content-between">
+                <a class="navbar-brand ms-3" href="#banner">
+                    <h1 id="logo">TP2</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barra"
+                    aria-controls="barra" aria-expanded="false" aria-label="Menú hamburguesa">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="barra" class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#banner">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pastillas">Funciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#carrusel">Destacados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#preguntas-frecuentes">Preguntas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#formulario">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+
+    <section id="banner" class="container-fluid">
+
+        <div class="columnas-banner row px-3">
+
+            <div id="texto-banner" class="col-12 col-md-6">
+                <h2>Descubrí, valorá y compartí experiencias únicas en cada copa</h2>
+                <p>En Vinum creemos que cada botella es una experiencia por descubrir. Ya seas un conocedor apasionado o
+                    un
+                    entusiasta que está comenzando, nuestra plataforma te invita a explorar una selección de vinos
+                    cuidadosamente curados.</p>
+                <a href="https://play.google.com/store/apps?hl=es_419">Descargar aplicación</a>
+                <img id="flores-arriba" src="imagenes/png/flores-arriba.png" alt="flores">
+            </div>
+
+            <div class="col-md-6 col-lg-6">
+
+                <picture class="d-none d-md-flex my-3 mx-auto">
+                    <img src="imagenes/png/mock-up-banner.png" alt="mock ups pantallas de aplicación">
+                </picture>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="position-absolute" id="imagen_fondo"> 
+    </div>
+
+    <main>
+        <!-- Pastillas -->
+
+        <section id="pastillas" class="container-fluid">
+
+            <div class="row justify-content-center align-middle g-3">
+
+                <div class="col-12 col-lg-4">
+                    <figure class="card border border-danger-subtle rounded-5">
+                        <picture>
+                            <img src="imagenes/png/imagen-card-1.png" class="card-img-top rounded-5 rounded-bottom-0"
+                                alt="botellas de vino con fondo rosa">
+                        </picture>
+                        <figcaption class="card-body">
+                            <h3 class="card-title">Descubrí nuevos sabores</h3>
+                            <p class="card-text">Explorá vinos recomendados y descubrí nuevas etiquetas que sorprendan
+                                tu
+                                paladar. </p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <figure class="card border border-danger-subtle rounded-5">
+                        <picture>
+                            <img src="imagenes/png/imagen-card-2.png" class="card-img-top rounded-5 rounded-bottom-0"
+                                alt="copas de vino en atardecer">
+                        </picture>
+
+                        <figcaption class="card-body">
+                            <h3 class="card-title">Calificá y compartí</h3>
+                            <p class="card-text">Dale un puntaje a cada vino y compartí tus opiniones con la comunidad.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <figure class="card border border-danger-subtle rounded-5">
+
+                        <picture>
+                            <img src="imagenes/png/imagen-card-3.png" class="card-img-top rounded-5 rounded-bottom-0"
+                                alt="personas juntas tomando vino">
+                        </picture>
+
+                        <figcaption class="card-body">
+                            <h3 class="card-title">Conectá con aficionados</h3>
+                            <p class="card-text">Intercambiá descubrimientos, conversá sobre tus vinos favoritos y
+                                compartí.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </div>
+
+            <!-- <img id="flores-mitad" src="imagenes/png/flores-medio.png" alt="flores"> -->
+        </section>
+
+
+        <!-- Carrusel -->
+        <section id="carrusel" class="container-fluid my-5">
+
+            <ul id="carrusel-bs" class="carousel slide p-0">
+
+                <li class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrusel-bs" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carrusel-bs" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carrusel-bs" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </li>
+
+                <li class="carousel-inner p-0">
+                    <ul class="p-0">
+                        <li class="carousel-item active">
+                            <picture>
+                                <source media="(max-width: 576px)" srcset="imagenes/png/carrusel-img-xs-1.png">
+                                <source media="(max-width: 992px)" srcset="imagenes/png/carrusel-img-md-1.png">
+                                <img src="imagenes/png/carrusel-img-lg-1.png" class="d-block w-100" alt="fondo blanco">
+                            </picture>
+
+                            <div class="carousel-caption row">
+
+                                <div class="col-7">
+                                    <picture class="d-none d-md-block">
+                                        <img src="imagenes/png/carrusel-1.png" alt="mock up de pantallas">
+                                    </picture>
+                                </div>
+
+                                <div class="texto-carrusel col-12 col-md-5 text-start align-middle">
+                                    <h3>Crea tu bitácora de cata</h3>
+                                    <p>Llevá un registro detallado de cada vino que probás, anotando notas de cata,
+                                        aromas,
+                                        maridajes y más en tu propio diario de experiencias.</p>
+
+                                    <div class="descargar-app">
+                                        <a href="https://www.apple.com/la/app-store/" target="_blank"><img
+                                                src="imagenes/png/app-store.png" alt="descargar app store"></a>
+                                        <a href="https://play.google.com/store/games?hl=es_419&pli=1"
+                                            target="_blank"><img src="imagenes/png/google-play.png"
+                                                alt="descargar play store"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="carousel-item">
+
+                            <picture>
+                                <source media="(max-width: 576px)" srcset="imagenes/png/carrusel-img-xs-1.png">
+                                <source media="(max-width: 992px)" srcset="imagenes/png/carrusel-img-md-1.png">
+                                <img src="imagenes/png/carrusel-img-lg-1.png" class="d-block w-100" alt="fondo blanco">
+                            </picture>
+
+                            <div class="carousel-caption row">
+
+                                <div class="col-7">
+                                    <picture class="d-none d-md-block">
+                                        <img src="imagenes/png/carrusel-2.png" alt="mock up de pantallas">
+                                    </picture>
+                                </div>
+
+                                <div class="texto-carrusel col-12 col-md-5 text-start align-middle">
+                                    <h3>Explorá vinos recomendados</h3>
+                                    <p>Descubrí etiquetas únicas y variedades recomendadas por otros amantes del vino.
+                                        Dejá
+                                        que la
+                                        comunidad te inspire a probar algo nuevo.</p>
+
+                                    <div class="descargar-app">
+                                        <a href="https://www.apple.com/la/app-store/" target="_blank"><img
+                                                src="imagenes/png/app-store.png" alt="descargar app store"></a>
+                                        <a href="https://play.google.com/store/games?hl=es_419&pli=1"
+                                            target="_blank"><img src="imagenes/png/google-play.png"
+                                                alt="descargar play store"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="carousel-item">
+
+                            <picture>
+                                <source media="(max-width: 576px)" srcset="imagenes/png/carrusel-img-xs-1.png">
+                                <source media="(max-width: 992px)" srcset="imagenes/png/carrusel-img-md-1.png">
+                                <img src="imagenes/png/carrusel-img-lg-1.png" class="d-block w-100" alt="fondo blanco">
+                            </picture>
+
+                            <div class="carousel-caption row">
+
+                                <div class="col-7">
+                                    <picture class="d-none d-md-block">
+                                        <img src="imagenes/png/carrusel-3.png" alt="mock up de pantallas">
+                                    </picture>
+                                </div>
+
+                                <div class="texto-carrusel col-12 col-md-5 text-start align-middle">
+                                    <h3>Conectáte con la comunidad</h3>
+                                    <p>Sumate a una red de apasionados del vino. Compartí tus experiencias, descubrí
+                                        nuevos
+                                        vinos y
+                                        conectá con personas que comparten tus gustos.</p>
+
+                                    <div class="descargar-app">
+                                        <a href="https://www.apple.com/la/app-store/" target="_blank"><img
+                                                src="imagenes/png/app-store.png" alt="descargar app store"></a>
+                                        <a href="https://play.google.com/store/games?hl=es_419&pli=1"
+                                            target="_blank"><img src="imagenes/png/google-play.png"
+                                                alt="descargar play store"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="botones-flechas">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-bs" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                </li>
+
+                <li class="botones-flechas">
+                <button class="carousel-control-next" type="button" data-bs-target="#carrusel-bs" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </li>
+
+            </ul>
+        </section>
+
+        <!-- Preguntas frecuentes -->
+
+        <section id="preguntas-frecuentes">
+            <div class="container-fluid">
+                <h3>¿Tenés alguna pregunta? Fijate las preguntas frecuentes</h3>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                ¿De qué se trata Vinum?
+                            </button>
+                        </h4>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Vinum es tu bitácora personal de vinos. Acá podés anotar los vinos que probás,
+                                    calificarlos,
+                                    sumar tus notas y hasta recomendarlos con maridajes ideales. Además, te conectás con
+                                    otros
+                                    que comparten tu amor por el vino, para descubrir etiquetas y sabores nuevos en
+                                    comunidad.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ¿Tengo que pagar algo o es gratuito?
+                            </button>
+                        </h4>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    Tranquilo, que acá no te cuesta ni un peso. Vinum es completamente gratuita, así que
+                                    podés
+                                    explorar, calificar y compartir sin preocuparte.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ¿Cómo puedo formar parte?
+                            </button>
+                        </h4>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    ¡Es fácil! Bajate la app en App Store o Google Play gratis y registrate. En unos
+                                    minutos
+                                    ya vas a estar cargando tus vinos y
+                                    conectándote con otros fanáticos de la buena copa.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+
+        <section id="formulario" class="container-fluid">
+
+            <div class="row justify-content-between">
+
+                <picture class="d-none d-md-block col-md-4 col-lg-4">
+                    <img src="imagenes/png/ilustracion-formulario.png"
+                        alt="ilustración plana de dos personas tomando vino" class="w-100">
+                </picture>
+
+                <form action="enviar_formulario.php" class="col-12 col-md-7 col-lg-8">
+                    <h3>¿Querés saber más? Contactános</h3>
+                    <div class="mb-4">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre"
+                            placeholder="Insertá tu nombre acá">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email"
+                            placeholder="ejemplo@ejemplo.com">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                    </div>
+                    <div id="boton">
+                        <input type="submit" value="Enviar formulario">
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="container-fluid">
+        <div class="columna-der">
+            <p>Maira Legendre</p>
+            <p>Maquetado y desarrollo web</p>
+            <p>DMT2BV</p>
+            <p>2024</p>
+        </div>
+        <div class="columna-izq">
+            <ul>
+                <li><a href="https://www.instagram.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="32px" height="32px" viewBox="0 0 24 24">
+                            <path fill="#ffffff"
+                                d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+                        </svg></a></li>
+                <li><a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24">
+                            <path fill="#ffffff"
+                                d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                        </svg></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="32px" height="32px" viewBox="0 0 24 24">
+                            <path fill="#ffffff"
+                                d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95" />
+                        </svg></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
