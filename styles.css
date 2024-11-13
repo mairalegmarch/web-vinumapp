@@ -79,12 +79,20 @@ header .container-fluid {
     background-size: 100%;
 }
 
+/* #imagen_banner {
+    background-image: url(imagenes/svg/imagen-banner-fondo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 1px;
+} */
+
 #banner {
     position: relative;
     width: 100%;
     height: 100vh;
     max-width: 100vw;
-    z-index: -10;
+    z-index: 0;
     background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 1400" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_325_1326)"><path d="M-20 -25H1456V573.29C1456 722.669 1319.84 758.041 1171.29 777.553C812.733 824.651 833.24 802.291 431.764 824.651C110.583 842.538 36.9397 984.019 -20 1053V-25Z" fill="%23F43233" stroke="%23FFA1B5" stroke-width="19"/></g><defs><clipPath id="clip0_325_1326"><rect width="1440" height="1068" fill="white"/></clipPath></defs></svg>') no-repeat center center;
     background-size: cover;
     overflow: visible;
@@ -101,7 +109,7 @@ img {
 }
 
 .columnas-banner {
-    align-items: center;        
+    align-items: center;  
 }
 
 #texto-banner {
@@ -128,14 +136,15 @@ img {
 }
 
 #texto-banner a {
-    z-index: 0;
     text-decoration: none;
+    z-index: 0;
     color: #86081D;
     padding: 12px 16px;
     background-color: #F5E3E0;
     border-radius: 20px;
     font-weight: 500;
     transition: background-color 0.5s ease;
+    cursor: pointer;
 }
 
 #texto-banner a:hover {
